@@ -1,0 +1,6 @@
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,3 @@
++# nginx
++Custom nginx debian package with additional modules and enhancements
++Based on Debian 1.6.2 package.
