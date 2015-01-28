@@ -76,7 +76,6 @@ full_configure_flags := \
 			--with-http_xslt_module \
 			--with-mail \
 			--with-mail_ssl_module \
-			--add-module=$(MODULESDIR)/nginx-sla \
 			--add-module=$(MODULESDIR)/nginx-auth-pam \
 			--add-module=$(MODULESDIR)/nginx-dav-ext-module \
 			--add-module=$(MODULESDIR)/nginx-echo \

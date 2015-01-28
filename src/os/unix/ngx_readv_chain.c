@@ -10,11 +10,7 @@
 #include <ngx_event.h>
 
 
-#if (IOV_MAX > 64)
-#define NGX_IOVS 64
-#else
-#define NGX_IOVS IOV_MAX
-#endif
+#define NGX_IOVS  16
 
 
 #if (NGX_HAVE_KQUEUE)
@@ -75,7 +71,7 @@ ngx_readv_chain(ngx_connection_t *c, ngx_chain_t *chain)
             iov->iov_len += chain->buf->end - chain->buf->last;
 
         } else {
-            if (vec.nelts >= NGX_IOVS) {
+            if (vec.nelts >= IOV_MAX) {
                 break;
             }
 
@@ -204,7 +200,7 @@ ngx_readv_chain(ngx_connection_t *c, ngx_chain_t *chain)
             iov->iov_len += chain->buf->end - chain->buf->last;
 
         } else {
-            if (vec.nelts >= NGX_IOVS) {
+            if (vec.nelts >= IOV_MAX) {
                 break;
             }
 

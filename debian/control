@@ -252,5 +252,6 @@ Description: nginx web/proxy server (standard version) - debugging symbols
  created by Igor Sysoev. It can be used both as a standalone web server
  and as a proxy to reduce the load on back-end HTTP or mail servers.
  .
- This package provides debugging symbols for nginx-http-proxy, to assist in debugging
- issues that you may find. It should not be required for normal operation.
+ This package provides debugging symbols for nginx-http-proxy, to assist in
+ debugging issues that you may find. It should not be required for normal
+ operation.

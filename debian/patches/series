@@ -1,5 +1,4 @@
 perl-use-dpkg-buildflags.patch
-nginx_readv_chain.patch
 nginx_filter.patch
 connection.patch
 server_tag.patch

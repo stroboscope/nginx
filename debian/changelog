@@ -1,3 +1,10 @@
+nginx (1.6.2-5+str2) unstable; urgency=low
+
+  * Remove nginx_readv_chain.patch
+    + due to sporadic worker high cpu usage
+
+ -- Sergey Viuchny <sergey@de-bs.ru>  Wed, 28 Jan 2015 16:29:35 +0300
+
 nginx (1.6.2-5+str1) unstable; urgency=low
 
   * Added nginx-http-proxy:
